@@ -1,0 +1,23 @@
+{
+  "name": "node-hello",
+  "version": "1.0.0",
+  "description": "hello world - node + express",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carriesmith/node-hello.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carriesmith/node-hello/issues"
+  },
+  "homepage": "https://github.com/carriesmith/node-hello"
+}
