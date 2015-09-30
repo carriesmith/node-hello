@@ -61,6 +61,21 @@ adminRouter.get('/users/:name', function(req,res){
 // apply the routes to our application
 app.use('/admin', adminRouter);
 
+
+// *** "Use app.route() as a shortcut to the Router to define 
+// multiple requests on a route" ??? (p. 71)
+// *** "These are applied directly to our main app object ... but 
+// we can also define them in the adminRouter object we had earlier" ??? (p. 71)
+
+// GET route to show the login form  (.get)
+// POST route to process the login form 
+app.route('/login').get(function(req,res){
+  res.send('this is the login form');
+}).post(function(req,res){
+  console.log('processing');
+  res.send('processing the login form');
+});
+
 // start the server
 app.listen(1337);
 console.log('visit me at http://localhost:1337')
